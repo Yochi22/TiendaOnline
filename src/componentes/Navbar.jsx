@@ -16,7 +16,7 @@ function Navbar() {
             <img className='logo-navbar' src={Logo} alt="" srcset="" />
             <nav ref={navRef}>
                 <a href="/#">Nosotros</a>
-                <a href="/#">Productos</a>
+                <a href="/#Products">Productos</a>
             
                 <button
                     className="nav-btn nav-close-btn"
