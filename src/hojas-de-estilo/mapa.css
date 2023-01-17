@@ -1,0 +1,41 @@
+.map-responsive{
+
+    overflow:hidden;
+
+    padding-bottom:56.25%;
+
+    position:relative;
+
+    height:0;
+
+}
+
+.map-responsive iframe{
+
+    margin-top: 40px;
+
+    left:0;
+
+    top:0;
+
+    height:100%;
+
+    width:100%;
+
+    position:absolute;
+
+}
+
+.mapa h2 {
+    justify-content: center;
+text-align: center;
+margin-top: 20px;
+font-family: sans-serif;
+}
+
+.mapa h3 {
+    justify-content: center;
+text-align: center;
+margin-top: 20px;
+font-family: sans-serif;
+}
