@@ -49,5 +49,38 @@ h3 {
 
 .icons-pedir-carrito{
     margin-top: 30px;
+
+
 }
 
+
+/* tablets */
+@media (min-width: 768px) {
+.accesorios-y-seguridad img  {
+    width: 250px;
+    height: 250px;
+    margin-top: 30px; }
+}
+
+.accesorios-y-seguridad {
+    gap: 90px;
+}
+
+.btn-añadir-al-carrito {
+    right: 250px;
+}
+
+.pedir-whatsapp{
+    left: 290px;
+}
+
+/* desktop */
+@media (min-width: 992px) {
+    .btn-añadir-al-carrito {
+        right: 460px;
+    }
+    
+    .pedir-whatsapp{
+        left: 490px;
+    }
+}
