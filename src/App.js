@@ -1,24 +1,28 @@
 
 import './App.css';
-import { Banner } from './componentes/Banner';
-import { Categorias } from './componentes/Categorias';
-import Navbar from './componentes/Navbar';
-import { Mapa } from './componentes/Mapa';
-import { RedesSociales } from './componentes/RedesSociales';
+import { Home } from './componentes/Home'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Carrito } from './componentes/carrito/Carrito'
 import { Accesorios } from './componentes/Accesorios';
-
+import { AvisosLed } from './componentes/AvisosLed';
+import { Iluminacion } from './componentes/Iluminacion';
+import { Otros } from './componentes/Otros';
 
 function App() {
-  return (
-    <div className="App">
-     <Navbar />
-     <Banner />
-     <Categorias />
-      <Mapa />
-      <RedesSociales />
 
-    <Accesorios />
-    </div>
+
+
+  return (
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />}></Route>
+        <Route path='/Cart' element={<Carrito />}></Route>
+        <Route path='/Accesorios' element={<Accesorios />}></Route>
+        <Route path='/Avisos' element={<AvisosLed />}></Route>
+        <Route path='/Iluminacion' element={<Iluminacion />}></Route>
+        <Route path='/Otros' element={<Otros />}></Route>
+      </Routes>
+      </BrowserRouter>
   );
 }
 

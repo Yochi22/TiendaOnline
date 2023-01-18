@@ -3,8 +3,10 @@ import Logo from '../imagenes/logocityled.png'
 import { FaBars, FaTimes, FaShoppingCart } from "react-icons/fa";
 import { useRef } from 'react';
 import '../hojas-de-estilo/navbar.css';
+import {Link} from "react-router-dom"
 
-function Navbar() {
+
+export const Navbar = () => {
     const navRef = useRef();
 
     const showNavbar = () => {
@@ -27,11 +29,19 @@ function Navbar() {
             <button className="nav-btn" onClick={showNavbar}>
                 <FaBars />
             </button>
+            <Link to={'/Cart'}>
             <button className='carrito-icon'>
                 <FaShoppingCart/>
             </button>
+            </Link>
         </header>
+        
+                  
     );
+
+
+
+
 }
 
 export default Navbar;
