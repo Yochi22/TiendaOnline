@@ -34,7 +34,7 @@ export const Navbar = ({ allProducts, setAllProducts, total, countProducts, setC
 		const productSpace = productsWhatsApp.join("/n");
 
 		return window.location.assign(
-			"https://api.whatsapp.com/send?phone=574245532742&text=Hola,%20estoy%20interesad@%20en%20adquirir%20los%20siguientes%20productos:" +
+			"https://api.whatsapp.com/send?phone=584245532742&text=Hola,%20estoy%20interesad@%20en%20adquirir%20los%20siguientes%20productos:" +
 			" " + productSpace
 		)
 		
