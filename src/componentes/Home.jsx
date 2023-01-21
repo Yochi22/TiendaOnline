@@ -1,17 +1,19 @@
 import React from 'react'
 import { Banner } from './Banner'
-import { Categorias } from './Categorias'
-import { Navbar} from './Navbar'
+import { ProductList } from './ProductList'
 import { Mapa } from './Mapa'
 import { RedesSociales } from './RedesSociales'
 
 
-export const Home = () => {
+export const Home = (allProducts, setAllProducts, countProducts, setCountProducts, total, setTotal ) => {
   return (
     <div>
-        <Navbar />
-        <Banner />
-        <Categorias />
+        <ProductList  allProducts={allProducts}
+      setAllProducts={setAllProducts}
+      total={total}
+      setTotal={setTotal}
+      countProducts={countProducts}
+      setCountProducts={setCountProducts} />
         <Mapa />
         <RedesSociales />
 

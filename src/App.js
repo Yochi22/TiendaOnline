@@ -1,28 +1,45 @@
 
 import './App.css';
-import { Home } from './componentes/Home'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Carrito } from './componentes/carrito/Carrito'
-import { Accesorios } from './componentes/Accesorios';
-import { AvisosLed } from './componentes/AvisosLed';
-import { Iluminacion } from './componentes/Iluminacion';
-import { Otros } from './componentes/Otros';
+import { Banner } from './componentes/Banner'
+import { Mapa } from './componentes/Mapa'
+import { Navbar } from './componentes/Navbar'
+import { useState } from 'react';
+import { ProductList } from './componentes/ProductList';
+import { RedesSociales } from './componentes/RedesSociales';
+
+
+
 
 function App() {
 
-
+const [allProducts, setAllProducts] = useState([])
+const [total, setTotal] = useState(0)
+const [countProducts, setCountProducts] = useState(0)
 
   return (
-      <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='/Cart' element={<Carrito />}></Route>
-        <Route path='/Accesorios' element={<Accesorios />}></Route>
-        <Route path='/Avisos' element={<AvisosLed />}></Route>
-        <Route path='/Iluminacion' element={<Iluminacion />}></Route>
-        <Route path='/Otros' element={<Otros />}></Route>
-      </Routes>
-      </BrowserRouter>
+    <div>
+      <Navbar 
+      allProducts={allProducts}
+      setAllProducts={setAllProducts}
+      total={total}
+      setTotal={setTotal}
+      countProducts={countProducts}
+      setCountProducts={setCountProducts}
+       />
+       
+       <Banner />
+      <ProductList
+      allProducts={allProducts}
+      setAllProducts={setAllProducts}
+      total={total}
+      setTotal={setTotal}
+      countProducts={countProducts}
+      setCountProducts={setCountProducts}/>
+
+      <Mapa />
+      <RedesSociales />
+    </div>
+  
   );
 }
 
