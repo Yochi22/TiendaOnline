@@ -122,7 +122,7 @@ export const data = [
     img: avisoLed1,
     name: 'Aviso LED/Personalizable',
     code: 'https://api.whatsapp.com/send?phone=584245532742&text=Hola,%20estoy%20interesad@%20en%20el%20aviso%20LED%20personalizable' ,
-    price: 250,
+    price: 15,
     category: 'Avisos LED',
     quantity: 1
 },
@@ -132,7 +132,7 @@ export const data = [
     img: avisoLed2,
     name: 'Aviso LED/Personalizable)',
     code: 'https://api.whatsapp.com/send?phone=584245532742&text=Hola,%20estoy%20interesad@%20en%20el%20aviso%20LED%20personalizable',
-    price: 250,
+    price: 15,
     category: 'Avisos LED',
     quantity: 1
 },
@@ -142,7 +142,7 @@ export const data = [
   img: avisoLed3,
   name: 'Aviso LED/Personalizable',
   code: 'https://api.whatsapp.com/send?phone=584245532742&text=Hola,%20estoy%20interesad@%20en%20el%20aviso%20LED%20personalizable',
-  price: 250,
+  price: 15,
   category: 'Avisos LED',
   quantity: 1
 },
@@ -152,7 +152,7 @@ id: 13,
 img: avisoLed4,
 name: 'Aviso LED/Personalizable',
 code: 'https://api.whatsapp.com/send?phone=584245532742&text=Hola,%20estoy%20interesad@%20en%20el%20aviso%20LED%20personalizable',
-price: 250,
+price: 15,
 category: 'Avisos LED',
 quantity: 1
 },
