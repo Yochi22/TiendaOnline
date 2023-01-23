@@ -3,7 +3,7 @@ import '../hojas-de-estilo/accesoriosyseguridad.css';
 import {data} from '../data'
 import { BsWhatsapp } from 'react-icons/bs'
 
-export const ProductList = ({allProducts, setAllProducts, countProducts, setCountProducts, total, setTotal }) => {
+export const ProductList = ({allProducts, setAllProducts, countProducts, setCountProducts, total, setTotal, articles }) => {
 	const onAddProduct = product => {
 
     if(allProducts.find (item => item.id === product.id) ){
@@ -23,13 +23,12 @@ export const ProductList = ({allProducts, setAllProducts, countProducts, setCoun
 
 
 
-
     return (
 
+    
 
-
-      <div className='container-items'>
-        {data.map(product => (
+      <div id="ProductList"className='container-items'>
+        {articles.map(product => (
           <div className='item' key={product.id}>
             <figure>
               <img src={product.img} alt={product.name} />
@@ -48,6 +47,7 @@ export const ProductList = ({allProducts, setAllProducts, countProducts, setCoun
             </div>
           </div>
         ))}
+
       </div>
     );
   };

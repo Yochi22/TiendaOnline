@@ -1,0 +1,30 @@
+.categories{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.btn-category {
+    width: 90px;
+    margin-bottom: 10px;
+    text-align: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+    background: #4ace0ce6;
+    border-radius: 60px ;
+    border-color: #69fa25e6;
+}
+
+@media (min-width: 992px) {
+    .btn-category {
+        width: 120px;
+        font-size: 14px;
+    
+    }
+    
+ }

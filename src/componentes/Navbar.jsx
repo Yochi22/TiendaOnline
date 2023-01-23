@@ -45,8 +45,8 @@ export const Navbar = ({ allProducts, setAllProducts, total, countProducts, setC
 	return (
 		<header>
 			<img className='logo-navbar' src={Logo} alt="" srcset="" />
-			<a href="">Nosotros</a>
-			<a href="">Productos</a>
+			<a href="#Nosotros">Nosotros</a>
+			<a href="#ProductList">Productos</a>
 			<div className='container-icon'>
 				<div
 					className='container-cart-icon'
