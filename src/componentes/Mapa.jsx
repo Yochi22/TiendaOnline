@@ -4,7 +4,7 @@ import '../hojas-de-estilo/mapa.css';
 
 export const Mapa = () => {
   return (
-    <div className='mapa'>
+    <div id='Contáctanos' className='mapa'>
     <h2>UBÍCANOS EN</h2>
     <h3>Calle 49 final carrera 24, Barquisimeto, Venezuela</h3>
     <div className='map-responsive'>

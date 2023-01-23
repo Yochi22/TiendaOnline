@@ -14,6 +14,7 @@ import { ButtonList } from './componentes/ButtonList';
 
 
 
+
 function App() {
 
 const [allProducts, setAllProducts] = useState([])
@@ -38,7 +39,7 @@ const filterCategory = (category) => {
 
 
   return (
-    <div>
+      <div>
       <Navbar 
       allProducts={allProducts}
       setAllProducts={setAllProducts}
@@ -64,7 +65,8 @@ const filterCategory = (category) => {
 
       <Mapa />
       <RedesSociales />
-    </div>
+   
+      </div>
   
   );
 }

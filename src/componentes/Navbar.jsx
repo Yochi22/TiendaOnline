@@ -6,6 +6,7 @@ import { BsWhatsapp } from 'react-icons/bs'
 import { useState } from 'react';
 
 
+
 export const Navbar = ({ allProducts, setAllProducts, total, countProducts, setCountProducts, setTotal
 }) => {
 	const [active, setActive] = useState(false);
@@ -45,7 +46,7 @@ export const Navbar = ({ allProducts, setAllProducts, total, countProducts, setC
 	return (
 		<header>
 			<img className='logo-navbar' src={Logo} alt="" srcset="" />
-			<a href="#Nosotros">Nosotros</a>
+			<a href="#Contáctanos">Contáctanos</a>
 			<a href="#ProductList">Productos</a>
 			<div className='container-icon'>
 				<div
